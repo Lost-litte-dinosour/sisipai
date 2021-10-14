@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link rel="stylesheet" href=" bootstrap-3.4.1-dist/css/bootstrap.min.css">
+
+    <link href="https://cdn.bootcss.com/font-awesome/5.8.0/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href=" css/index.css">
+
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <title>四四拍首页</title>
+
+</head>
+
+<body>
+    <div class="container-fluid " style="background: linear-gradient(#c9c9c9, #c9c9c9) no-repeat;background-size: 100% 2px; background-position: 0px 89px;">
+        <div class="col-lg-2 col-md-2 col-sm-7 col-xs-9" style="margin-top: 15px;">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <img src="image/logo.png" alt="" style="height: 60px;">
+            </div>
+            <!-- <div class="col-lg-8 col-md-8 col-sm-4 col-xs-4" style="padding: 0 0 0 12%;">
+                <h2 style="color: #9e9e9e;">四四拍</h2>
+            </div> -->
+        </div>
+        <div class=" col-sm-4 visible-sm visible-xs col-xs-3" style="margin-top: 20px;text-align: center;margin-top: 25px;">
+            <a href="touxiang.html"><img src=" image/touxiang.jpg" alt="" class="img-circle" height=50px width=50px></a>
+        </div>
+        <div class="visible-lg visible-md">
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 " style="margin-top: 20px;">
+                <form class="navbar-form form-group visible-lg visible-md">
+                    <div class="search-box">
+                        <input class="search-txt" type="text" placeholder="搜索" style="line-height: 190%;" />
+                        <a class="search-btn" href="#" style="text-decoration: none;">
+                            <div class="fas fa-search"></div>
+                        </a>
+                        <!-- <input type="text" name="" id="" class="search-txt" placeholder="搜索" style="line-height: 190%;">
+                        <a class="search-btn" href="#" style="text-decoration: none; line-height: 190%;">
+                            <span class="fas fa-search"></span>
+                        </a> -->
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-4 col-xs-12 " style="margin-top: 20px;padding: 0;">
+                <div style="background-color: #990001;border-radius: 30px; height: 50px;color: white;text-align: center;width: 100px;">
+                    <p style="line-height:  50px;;">提问</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1 visible-lg " style="margin-top: 20px;">
+
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 top-nav" style="margin-top: 20px;text-align: center;">
+            <h4 style="background: linear-gradient(#b13e4d, #b13e4d) no-repeat;background-size: 22% 3px; background-position: 50% 50%;height: 50px;">主页</h4>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 hidden-xs top-nav" style="margin-top: 20px;text-align: center;color: #afafaf;height: 70px;">
+            <h4>曲库</h4>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 visible-xs top-nav" style="margin-top: 20px;text-align: center;color: #afafaf;">
+            <h4>曲库</h4>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 top-nav-0" style="margin-top: 20px;text-align: center;color: #afafaf;padding: 0;">
+            <h4>为您解答</h4>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-12 top-nav-0" style="margin-top: 20px;text-align: center;color: #afafaf;padding: 0;">
+            <h4>系统消息</h4>
+        </div>
+        <div class="col-lg-2 col-md-2 visible-lg visible-md" style="margin-top: 20px;text-align: center;margin-top: 10px;">
+            <a href="touxiang.html"><img src=" image/touxiang.jpg" alt="" class="img-circle" height=50px width=50px></a>
+        </div>
+        <div class="visible-sm visible-xs">
+            <div class="visible-sm col-sm-1 col-xs-12"></div>
+            <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 " style="margin-top: 20px;">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                </div>
+            </div>
+            <!-- <div class="visible-sm visible-xs col-sm-2 col-xs-12"></div> -->
+            <div class="col-lg-1 col-md-1 col-sm-4 col-xs-12" style="margin-top: 20px;padding: 0;">
+                <div style="background-color: #990001;border-radius: 30px; height: 50px;color: white;text-align: center;width: 100px;margin-left: 33%;">
+                    <p style="line-height:50px;">提问</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid " style="background-color: #f3f3f3;">
+        <div class="col-lg-2 col-md-3 col-sm-6 col-xs-12 " style="border-right:2px  solid #b7b7b7 ;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style="height: 20px;"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id='left-top-nav'>
+                <div class='row' style="font-size: 30px; font-weight:600;color: #921a22;margin: 10% 0% 10% 0%;">分类</div>
+                <div style="font-size: 18px;background-color: #e5e5e5;border-radius: 30px;height: 15%;width: 88%;margin: 8% 0;">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            <img src="image/fengge.png" alt="" style="height: 30px;margin-left: 10px;"> &nbsp; 风格
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;border-radius: 30px;height: 15%;width: 88%;margin: 8% 0;" class="left-top-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            <img src="image/shidai.png" alt="" style="height: 30px;margin-left: 10px;"> &nbsp; 时代
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;border-radius: 30px;height: 15%;width: 88%;margin: 8% 0;" class="left-top-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            <img src="image/zuozhe.png" alt="" style="height: 30px;margin-left: 10px;"> &nbsp; 作者
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;border-radius: 30px;height: 15%;width: 88%;margin: 8% 0;" class="left-top-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            <img src="image/guojia.png" alt="" style="height: 30px;margin-left: 10px;"> &nbsp; 国家
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " style="height: 2px;background-color: #dcdcdc;width: 100%;"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 " id='left-bottom-nav'>
+                <div class='row' style="font-size: 30px; font-weight:600;color: #921a22;margin: 10% 0% 10% 0%;">个人中心</div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;" class="left-bottom-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            &nbsp; 收藏夹
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;" class="left-bottom-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            &nbsp; 关注的问题
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;" class="left-bottom-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            &nbsp; 节拍器
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;" class="left-bottom-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            &nbsp; 调音器
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;" class="left-bottom-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            &nbsp; 帮助中心
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;" class="left-bottom-nav-div">
+                    <a href="">
+                        <div style="line-height: 45px;">
+                            &nbsp; 设置
+                        </div>
+                    </a>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;">
+                    <div style="line-height: 45px;">
+                        &nbsp;
+                    </div>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;">
+                    <div style="line-height: 45px;">
+                        &nbsp;
+                    </div>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;">
+                    <div style="line-height: 45px;">
+                        &nbsp;
+                    </div>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;">
+                    <div style="line-height: 45px;">
+                        &nbsp;
+                    </div>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;">
+                    <div style="line-height: 45px;">
+                        &nbsp;
+                    </div>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;">
+                    <div style="line-height: 45px;">
+                        &nbsp;
+                    </div>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;">
+                    <div style="line-height: 45px;">
+                        &nbsp;
+                    </div>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;">
+                    <div style="line-height: 45px;">
+                        &nbsp;
+                    </div>
+                </div>
+                <div style="font-size: 18px;height: 15%;width: 88%;margin: 8% 0;">
+                    <div style="line-height: 45px;">
+                        &nbsp;
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-1 col-sm-6 col-xs-12 ">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin: 2%;">
+                <img src="image/sousuo.png" alt="" style="width: 92%">
+                <span style="margin: -100px;">
+                    <a href=""><img src="image/shiqu.png" alt="" style="width: 2.5%;"></a>
+                </span>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin: 2%;">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-color: transparent;position: relative;">
+                            <div style="display: block !important;">
+                                <img src="image/swiper11.png" alt="">
+                            </div>
+                            <div style="position:absolute;left: 20px;top: 440px;">
+                                <div style="background: linear-gradient(#cfcecc, #cfcecc) no-repeat;background-size: 100% 2px; background-position: 0px 35px;height: 45px;">
+                                    <h4>[旅行过度] 音乐总监因疫情辞职 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                                </div>
+                                <div style="font-size: 7px;float: left;">
+                                    <p style="margin: 0;;">Timothy Redmond 宣布， 辞去Winston-Salem交响</p>
+                                    <p style="float: left;">乐团音乐总监之位...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-color: transparent;">
+                            <img src="image/swiper22.png" alt="">
+                            <div style="position:absolute;left: 20px;top: 440px;">
+                                <div style="background: linear-gradient(#cfcecc, #cfcecc) no-repeat;background-size: 100% 2px; background-position: 0px 60px;height: 90px;">
+                                    <h4>
+                                        <p style="text-indent: -177px;">在鸟类中找到灵感：</p>
+                                        <p style="text-indent: 0;">西贝利厄斯的第五交响曲&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                    </h4>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-color: transparent;">
+                            <img src="image/swiper33.png" alt="">
+                            <div style="position:absolute;left: 20px;top: 440px;">
+                                <div style="background: linear-gradient(#cfcecc, #cfcecc) no-repeat;background-size: 100% 2px; background-position: 0px 35px;height: 45px;">
+                                    <h4>巴赫的一生 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4>
+                                </div>
+                                <div style="font-size: 7px;float: left;">
+                                    <p style="margin: 0;;">对古典音乐做出巨大贡献的巴赫，被称作“西方近</p>
+                                    <p style="float: left;"> 代音乐之父”，至今仍享誉全世界，伟大的...</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide" style="background-color: transparent;">
+                            <img src="image/swiper44.png" alt="">
+                            <div style="position:absolute;left: 20px;top: 440px;">
+                                <div style="background: linear-gradient(#cfcecc, #cfcecc) no-repeat;background-size: 100% 2px; background-position: 0px 35px;height: 45px;">
+                                    <h4>
+                                        <p style="text-indent: 0px;margin-top: 15px;">如何分享乐谱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next" style="color: black;background-color:white;width: 5%;height: 12%;border-radius:50%;margin-left: 10%;"></div>
+                <div class="swiper-button-prev" style="color: black;background-color:white;width: 5%;height: 12%;border-radius:50%"></div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-left: 2%;">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row" style="position: relative;">
+                    <a href="">
+                        <img src="image/Advertise.jpg" alt="" style="height: 600px;">
+                        <img src="image/guangao.png" alt="" style="position: absolute; left: 6%;top: 6%;">
+                    </a>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 row" style="position: relative;">
+                    <a href="">
+                        <img src="image/Advertise.jpg" alt="" style="height: 600px;">
+                        <img src="image/guangao.png" alt="" style="position: absolute; left: 6%;top: 6%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- My Swiper's JS -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+            freeMode: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>

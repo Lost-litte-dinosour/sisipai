@@ -1,0 +1,151 @@
+.search-box {
+    position: absolute;
+    top: 320%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #e2e2e2;
+    height: 50px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.fa-search {
+    text-decoration: none;
+}
+
+.search-btn {
+    position: absolute;
+    top: 0%;
+    left: -75%;
+    color: #e84118;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e2e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    width: 0;
+}
+
+.search-box:hover>.search-txt {
+    width: 200%;
+    padding: 0 6px;
+}
+
+.search-box:hover>.search-btn {
+    background: #e5eecc;
+    left: 100%;
+}
+
+.bjys {
+    background-color: black;
+}
+
+.ztys {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.my_ul1 li a {
+    display: block;
+    height: 50px;
+    text-decoration: none;
+}
+
+.my_ul1 li a:hover {
+    color: gold;
+}
+
+.navbar-default div div a:hover {
+    color: gold;
+}
+
+.navbar-default div div a {
+    color: white;
+}
+
+.navbar-default div div a:active {
+    color: red;
+}
+
+.dtsz-nav {
+    width: 70%;
+    margin-left: auto;
+    background-color: #e8ebe8;
+    transition: width 0.4s;
+}
+
+.dtsz-nav:hover {
+    width: 100%;
+}
+
+#left-top-nav a {
+    text-decoration: none;
+    color: #7e7e7e;
+}
+
+.left-top-nav-div:hover {
+    background-color: #e5e5e5;
+}
+
+#left-bottom-nav a {
+    text-decoration: none;
+    color: #7e7e7e;
+}
+
+.left-bottom-nav-div:hover {
+    background-color: #e5e5e5;
+}
+
+.top-nav:hover {
+    background: linear-gradient(#b13e4d, #b13e4d) no-repeat;
+    background-size: 22% 3px;
+    background-position: 50% 50%;
+}
+
+.top-nav-0:hover {
+    background: linear-gradient(#b13e4d, #b13e4d) no-repeat;
+    background-size: 22% 3px;
+    background-position: 50% 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
